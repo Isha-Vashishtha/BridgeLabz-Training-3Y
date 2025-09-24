@@ -1,0 +1,18 @@
+package UniversityManagement;
+
+public class Professor {
+    private String name;
+
+    public Professor(String name) {
+        this.name = name;
+    }
+
+    public void assignProfessor(Course c) {
+        c.setProfessor(this);
+        System.out.println(name + " assigned to course " + c.getCourseName());
+    }
+
+    public String getName() {
+        return name;
+    }
+}
